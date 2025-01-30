@@ -6,8 +6,8 @@ try:
     user = "root"
     password = "nextvisiontech2022@gmail.comU"
     )
-except Exception:
-    print("Database connection failed")
+except mysql.connector.Error as e:
+    print(f"Error: {e}")
 else:
     print("Database connection successful")
 
